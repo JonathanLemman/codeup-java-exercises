@@ -9,7 +9,7 @@ public class HelloWorld {
         String myString = "Lemon is cool!";
         System.out.println(myString);
 
-        double myNumber = 3.14;
+        float myNumber = 3.14F;
         System.out.println(myNumber);
 
         int x = 5;
