@@ -6,22 +6,22 @@ public class ConsoleExercises {
         input.useDelimiter("\n");
 
         //***********
-//        double pi = 3.14159;
-////        System.out.format("\nThe value of pi is approximately %.2f.\n", pi);
+        double pi = 3.14159;
+        System.out.format("\nThe value of pi is approximately %.2f.\n", pi);
         // ***********
-//        System.out.println("Enter an Integer: ");
-//        int userInt = input.nextInt();
-//        System.out.format("Your Integer is: %d\n", userInt);
+        System.out.println("Enter an Integer: ");
+        int userInt = input.nextInt();
+        System.out.format("Your Integer is: %d\n", userInt);
         //************
-//        System.out.println("Enter three of your favorite words: ");
-//        String firstWord = input.next();
-//        String secondWord = input.next();
-//        String thirdWord = input.next();
-//        System.out.format("Your Favorite Words are: \n%s\n%s\n%s", firstWord, secondWord, thirdWord);
+        System.out.println("Enter three of your favorite words: ");
+        String firstWord = input.next();
+        String secondWord = input.next();
+        String thirdWord = input.next();
+        System.out.format("Your Favorite Words are: \n%s\n%s\n%s", firstWord, secondWord, thirdWord);
         //************
-//        System.out.println("Enter a sentence: ");
-//        String userSentence = input.nextLine();
-//        System.out.format("\nYour sentence is: %s", userSentence);
+        System.out.println("Enter a sentence: ");
+        String userSentence = input.nextLine();
+        System.out.format("\nYour sentence is: %s", userSentence);
         //************
         System.out.println("Enter length of codeup classroom:");
         int length = Integer.parseInt(input.nextLine());
