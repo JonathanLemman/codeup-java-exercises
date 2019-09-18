@@ -1,6 +1,17 @@
+import java.util.Scanner;
+
 public class PracticeFun {
     public static void main(String[] args) {
-        // convert word to pig latin word (assume word doesn't begin with a vowel or end in ay)
-        //        String cat = "cat"; // "atcay"
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a word: ");
+        String userInput = input.nextLine();
+
+        String pigLatinWord = userInput
+                .trim()
+                .toLowerCase()
+                .substring(1)
+                .concat(userInput.substring(0, 1).toLowerCase())
+                .concat("ay");
+        System.out.println(pigLatinWord);
     }
 }

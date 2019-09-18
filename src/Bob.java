@@ -4,9 +4,9 @@ public class Bob {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Hi, I'm Bob!");
+        System.out.println("Say something to Bob...");
         String inputBob = input.nextLine();
-        String message = "";
+        String message;
 
         if(inputBob.endsWith("?")) {
             message = "Sure";
@@ -19,7 +19,6 @@ public class Bob {
         }
 
         System.out.println(message);
-
 
     }
 }
