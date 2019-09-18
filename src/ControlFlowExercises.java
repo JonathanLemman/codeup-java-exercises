@@ -49,19 +49,38 @@ public class ControlFlowExercises {
 //            }
 //        }
 
-        System.out.println("What number would you like to go up to?");
-        int inputNum = Integer.parseInt(input.nextLine());
-        System.out.println("Here is your table!");
+//        System.out.println("What number would you like to go up to?");
+//        int inputNum = Integer.parseInt(input.nextLine());
+//        System.out.println("Here is your table!");
+//
+//        System.out.println("number | squared | cubed");
+//        System.out.println("------ | ------- | -----");
+//
+//        for(int i = 1; i <= inputNum; i++) {
+//            System.out.println(String.format("%-6d | %-7d | %-6d", i,(int) Math.pow(i, 2),(int) Math.pow(i, 3)));
+//        }
 
-        System.out.println("number | squared | cubed");
-        System.out.println("------ | ------- | -----");
+        do {
+            System.out.println("Give me a grade number:");
+            int grade = Integer.parseInt(input.nextLine());
 
-        for(int i = 1; i <= inputNum; i++) {
-            System.out.println(String.format("%-6d | %-7d | %-6d", i,(int) Math.pow(i, 2),(int) Math.pow(i, 3)));
-        }
+            String gradeLetter = "";
+            if (grade <= 100 && grade >= 88) {
+                gradeLetter = "A";
+            } else if (grade <= 87 && grade >= 80) {
+                gradeLetter = "B";
+            } else if (grade <= 79 && grade >= 67) {
+                gradeLetter = "C";
+            } else if (grade <= 66 && grade >= 60) {
+                gradeLetter = "D";
+            } else if (grade <= 59 && grade >= 0) {
+                gradeLetter = "F";
+            }
 
+            System.out.println(gradeLetter);
+            System.out.println("Would you like to test another grade Y/N");
 
-
+        }while(input.nextLine().equalsIgnoreCase("y"));
 
 
 
