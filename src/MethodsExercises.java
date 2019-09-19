@@ -10,8 +10,9 @@ public class MethodsExercises {
 //        System.out.println(returnMultiplication(3,5));
 //        System.out.println(returnDivision(10,2));
 //        System.out.println(returnModulus(10,3));
+//        getInt(1, 10);
         System.out.println("Please enter a number between 1 and 10: ");
-        getInt(1, 10);
+        System.out.println(factorial());
 
 
     }
@@ -75,21 +76,34 @@ public class MethodsExercises {
 //        return 0;
 //    };
 
-    public static int getInt(int min, int max) {
+//    public static int getInt(int min, int max) {
+//        Scanner sc = new Scanner(System.in);
+//        if (sc.hasNextInt()) {
+//            int usernum = sc.nextInt();
+//            if(usernum >= min && usernum <= max) {
+//                return usernum;
+//            } else {
+//                System.out.println("invalid range!");
+//                return getInt(min,max);
+//            }
+//        } else {
+//            System.out.println("Invalid Input!");
+//            return getInt(min,max);
+//        }
+//    }
+
+    public static int factorial() {
         Scanner sc = new Scanner(System.in);
-        if (sc.hasNextInt()) {
-            int usernum = sc.nextInt();
-            if(usernum >= min && usernum <= max) {
-                return usernum;
-            } else {
-                System.out.println("invalid range!");
-                return getInt(min,max);
-            }
-        } else {
-            System.out.println("Invalid Input!");
-            return getInt(min,max);
+        int input = sc.nextInt();
+        int count = 1;
+        for(int i = 1; i <= input; i++) {
+            count *= i;
         }
+        return count;
     }
+
+
+
 
 
 
