@@ -5,7 +5,8 @@ public class MethodsExercises {
         System.out.println(returnAddition(3,5));
         System.out.println(returnSubtraction(5,2));
         System.out.println(returnMultiplication(3,5));
-        System.out.println(returnDivision(10,3));
+        System.out.println(returnDivision(10,0));
+        System.out.println(returnModulus(10,3));
 
     }
 
@@ -24,6 +25,10 @@ public class MethodsExercises {
 
     public static int returnDivision(int num1, int num2) {
         return num1 / num2;
+    }
+
+    public static int returnModulus(int num1, int num2) {
+        return num1 % num2;
     }
 
 
