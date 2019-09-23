@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.Math;
 
 public class MethodsExercises {
     public static void main(String[] args) {
@@ -11,9 +12,9 @@ public class MethodsExercises {
 //        System.out.println(returnDivision(10,2));
 //        System.out.println(returnModulus(10,3));
 //        getInt(1, 10);
-        System.out.println("Please enter a number between 1 and 10: ");
-        System.out.println(factorial());
-
+//        System.out.println("Please enter a number between 1 and 10: ");
+//        System.out.println(factorial());
+    diceRoll();
 
     }
 
@@ -92,17 +93,31 @@ public class MethodsExercises {
 //        }
 //    }
 
-    public static int factorial() {
+//    public static int factorial() {
+//        Scanner sc = new Scanner(System.in);
+//        int input = sc.nextInt();
+//        int count = 1;
+//        for(int i = 1; i <= input; i++) {
+//            count *= i;
+//        }
+//        return count;
+//    }
+
+    public static void diceRoll() {
         Scanner sc = new Scanner(System.in);
-        int input = sc.nextInt();
-        int count = 1;
-        for(int i = 1; i <= input; i++) {
-            count *= i;
+        System.out.println("Enter the number of sides for a pair of dice: ");
+        double diceSides = sc.nextInt();
+        System.out.println("Would you like to roll the dice?");
+        String question = sc.next();
+        if(question.equals("yes")) {
+            System.out.println(randomNum(diceSides));
+            System.out.println(randomNum(diceSides));
         }
-        return count;
     }
 
-
+    public static double randomNum(double num) {
+        return Math.random() * num + 1;
+    }
 
 
 
