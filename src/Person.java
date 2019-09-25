@@ -3,6 +3,15 @@ public class Person {
 
     private String name;
 
+
+    //************** Constructor *********
+    public Person(String name) {
+        setName(name);
+//        this.name = name;
+    }
+
+
+
     //************* Methods *************
     // returns the person's name
     public String getName(){
@@ -14,13 +23,10 @@ public class Person {
     }
     // prints a message to the console using the person's name
     public void sayHello(){
-        System.out.format("Hello, %s!", name);
+        System.out.format("Hello, %s!", this.getName());
     }
 
-    //************** Constructor *********
-    public Person(String name) {
-        this.name = name;
-    }
+
 
 
     public static void main(String[] args){
