@@ -6,12 +6,15 @@ public class CircleApp {
         Input userInput = new Input();
 
         System.out.println("Provide the radius of your circle: ");
-        double userRadius = userInput.getDouble();
-
-        Circle userCircle = new Circle(userRadius);
+        Circle userCircle = new Circle(userInput.getDouble());
 
         System.out.println(userCircle.getArea());
         System.out.println(userCircle.getCircumference());
+
+        System.out.println("Would you like to enter a new radius? Y/N");
+        userInput.getString();
+        userInput.yesNo();
+
 
     }
 }
