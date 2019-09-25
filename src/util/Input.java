@@ -15,8 +15,17 @@ public class Input {
 
 
     //Methods
-    public String getString(){
+    private String getString(){
         return this.scanner.nextLine();
+    }
+
+    public String getString(String prompt){
+        if(prompt.isEmpty()){
+            System.out.println("Type something: ");
+        } else {
+            System.out.println(prompt);
+        }
+        return getString();
     }
 
     public boolean yesNo(){
@@ -25,8 +34,7 @@ public class Input {
     }
 
     public int getInt(int min, int max){
-        System.out.println("Give me a number: ");
-        int userInput = Integer.parseInt(this.scanner.nextLine());
+        int userInput = getInt();
         if(userInput >= min && userInput <= max){
             return userInput;
         }else {
@@ -41,8 +49,7 @@ public class Input {
     }
 
     public double getDouble(double min, double max){
-        System.out.println("Give me a decimal: ");
-        double userInput = Double.parseDouble(this.scanner.nextLine());
+        double userInput = getDouble();
         if(userInput >= min && userInput <= max){
             return userInput;
         }else {
