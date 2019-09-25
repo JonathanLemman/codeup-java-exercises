@@ -9,7 +9,7 @@ public class InputTest {
         System.out.println(userInput.getInt(1, 10));
         System.out.println(userInput.getInt());
         System.out.println(userInput.getDouble(1, 10));
-        System.out.println(userInput.getDouble());
+        System.out.println(userInput.getDouble("Give me a decimal: "));
 
     }
 }
