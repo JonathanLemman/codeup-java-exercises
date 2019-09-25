@@ -2,7 +2,6 @@ import java.util.Arrays;
 
 public class ArraysExercises {
 
-//    static Person[] people = new Person[3];
 
     public static void main(String[] args) {
 
