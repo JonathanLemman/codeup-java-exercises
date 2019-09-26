@@ -21,6 +21,7 @@ public class MoviesApplication {
 
             switch (choice) {
                 case "0":
+                    System.out.println("Ok, See you next time!");
                     repeat = false;
                     break;
                 case "1":
