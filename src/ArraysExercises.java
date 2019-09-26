@@ -32,15 +32,5 @@ public class ArraysExercises {
     }
 
 
-//    String[] newLangs = Arrays.copyOf(languages, languages.length+1);
-//    newLangs[4] = "groovy";
-//
-//        Arrays.sort(newLangs);
-//
-//        for (String lang : newLangs){
-//        System.out.println("lang = " + lang);
-//    }
-
-
 
 }
