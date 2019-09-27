@@ -9,11 +9,13 @@ public class Square extends Quadrilateral {
     @Override
     void setLength(double length) {
         super.length = length;
+        super.width = length
     }
 
     @Override
     void setWidth(double width) {
         super.width = width;
+        super.length = width;
     }
 
     @Override
