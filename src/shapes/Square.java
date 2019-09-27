@@ -18,11 +18,11 @@ public class Square extends Quadrilateral {
 
     @Override
     public double getPerimeter() {
-        return (2 * super.length) + (2 * super.width);
+        return 4 * super.width;
     }
 
     @Override
     public double getArea() {
-        return super.length * super.width;
+        return Math.pow(super.width, 2);
     }
 }
