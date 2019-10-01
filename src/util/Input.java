@@ -43,6 +43,7 @@ public class Input {
         }
     }
 
+    @SuppressWarnings("all")
     public int getInt(){
         try {
             return Integer.valueOf(getString("Give me a number: "));
@@ -64,6 +65,7 @@ public class Input {
         }
     }
 
+    @SuppressWarnings("all")
     public double getDouble(String prompt){
         try {
             return Double.valueOf(getString(prompt));
