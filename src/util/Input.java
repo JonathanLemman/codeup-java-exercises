@@ -43,10 +43,17 @@ public class Input {
         }
     }
 
+    @SuppressWarnings("all")
     public int getInt(){
-        System.out.println("Give me a number: ");
-        return Integer.parseInt(this.scanner.nextLine());
+        try {
+            System.out.println("Give me a number: ");
+            return Integer.valueOf(getString());
+        }catch(NumberFormatException e) {
+            System.out.println("Not a number please try again.");
+            return getInt();
+        }
     }
+
 
     public double getDouble(double min, double max){
         double userInput = getDouble("Give me a decimal: ");
@@ -58,9 +65,15 @@ public class Input {
         }
     }
 
+    @SuppressWarnings("all")
     public double getDouble(String prompt){
-        System.out.println(prompt);
-        return Double.parseDouble(this.scanner.nextLine());
+        try {
+            System.out.println(prompt);
+            return Double.valueOf(getString());
+        }catch(NumberFormatException e) {
+            System.out.println("Not a decimal please try again.");
+            return getDouble(prompt);
+        }
     }
 
 
