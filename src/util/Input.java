@@ -43,13 +43,12 @@ public class Input {
         }
     }
 
-    @SuppressWarnings("all")
     public int getInt(){
         try {
-            System.out.println("Give me a number: ");
-            return Integer.valueOf(getString());
+            return Integer.valueOf(getString("Give me a number: "));
         }catch(NumberFormatException e) {
-            System.out.println("Not a number please try again.");
+            System.out.println("Invalid type please try again.");
+            // send email to admin with problem and details
             return getInt();
         }
     }
@@ -65,11 +64,9 @@ public class Input {
         }
     }
 
-    @SuppressWarnings("all")
     public double getDouble(String prompt){
         try {
-            System.out.println(prompt);
-            return Double.valueOf(getString());
+            return Double.valueOf(getString(prompt));
         }catch(NumberFormatException e) {
             System.out.println("Not a decimal please try again.");
             return getDouble(prompt);
